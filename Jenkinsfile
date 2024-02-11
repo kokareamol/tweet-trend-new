@@ -18,7 +18,7 @@ environment{
 
         stage('SonarQube analysis') {
         environment {    
-          scannerHome = tool 'Sonar'
+          scannerHome = tool 'ak-sonar-scanner'
         }
         steps{
         withSonarQubeEnv('sonar-server') { // If you have configured more than one global server connection, you can specify its name
